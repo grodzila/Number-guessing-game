@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Number Guessing Game</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>Number Guessing Game</h1>
+    <form id="exercise" novalidate>
+      <label for="guess">Guess a whole number from 1 to 20</label>
+      <input id="guess" type="number" min="1" max="20" step="1">
+      <div class="buttons">
+        <button id="guessButton" type="submit">Guess</button>
+        <button id="restartButton" type="button">Restart Game</button>
+      </div>
+    </form>
+    <p id="result" aria-live="polite"></p>
+    <p id="attempts">Attempts: 0</p>
+    <details>
+      <summary>Number sequence from 1 to 10</summary>
+      <p id="sequence"></p>
+    </details>
+  </main>
+</body>
+</html>
